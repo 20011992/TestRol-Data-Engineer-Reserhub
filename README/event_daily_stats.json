@@ -1,0 +1,187 @@
+[{
+  "date": "2025-12-01",
+  "total_users": "30",
+  "total_searches": "5",
+  "total_purchases": "31",
+  "total_purchased_amount": "18674"
+}, {
+  "date": "2025-12-02",
+  "total_users": "38",
+  "total_searches": "10",
+  "total_purchases": "39",
+  "total_purchased_amount": "20380"
+}, {
+  "date": "2025-12-03",
+  "total_users": "25",
+  "total_searches": "5",
+  "total_purchases": "26",
+  "total_purchased_amount": "16518"
+}, {
+  "date": "2025-12-04",
+  "total_users": "26",
+  "total_searches": "3",
+  "total_purchases": "30",
+  "total_purchased_amount": "16251"
+}, {
+  "date": "2025-12-05",
+  "total_users": "26",
+  "total_searches": "9",
+  "total_purchases": "25",
+  "total_purchased_amount": "11290"
+}, {
+  "date": "2025-12-06",
+  "total_users": "30",
+  "total_searches": "7",
+  "total_purchases": "30",
+  "total_purchased_amount": "14216"
+}, {
+  "date": "2025-12-07",
+  "total_users": "8",
+  "total_searches": "8",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-08",
+  "total_users": "3",
+  "total_searches": "3",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-09",
+  "total_users": "7",
+  "total_searches": "7",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-10",
+  "total_users": "4",
+  "total_searches": "4",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-11",
+  "total_users": "12",
+  "total_searches": "12",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-12",
+  "total_users": "5",
+  "total_searches": "5",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-13",
+  "total_users": "4",
+  "total_searches": "4",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-14",
+  "total_users": "6",
+  "total_searches": "8",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-15",
+  "total_users": "5",
+  "total_searches": "6",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-16",
+  "total_users": "7",
+  "total_searches": "8",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-17",
+  "total_users": "5",
+  "total_searches": "5",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-18",
+  "total_users": "2",
+  "total_searches": "2",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-19",
+  "total_users": "4",
+  "total_searches": "5",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-20",
+  "total_users": "7",
+  "total_searches": "7",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-21",
+  "total_users": "8",
+  "total_searches": "9",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-22",
+  "total_users": "3",
+  "total_searches": "3",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-23",
+  "total_users": "6",
+  "total_searches": "6",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-24",
+  "total_users": "6",
+  "total_searches": "6",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-25",
+  "total_users": "5",
+  "total_searches": "5",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-26",
+  "total_users": "7",
+  "total_searches": "9",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-27",
+  "total_users": "7",
+  "total_searches": "8",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-28",
+  "total_users": "6",
+  "total_searches": "6",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-29",
+  "total_users": "6",
+  "total_searches": "6",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-30",
+  "total_users": "5",
+  "total_searches": "5",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}, {
+  "date": "2025-12-31",
+  "total_users": "5",
+  "total_searches": "6",
+  "total_purchases": "0",
+  "total_purchased_amount": "0"
+}]
