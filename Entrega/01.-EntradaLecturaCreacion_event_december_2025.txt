@@ -1,0 +1,34 @@
+from pyspark.sql.types import StructType, StructField, IntegerType, StringType, DateType
+schema_events = StructType([
+    StructField('event', StringType(), True),
+    StructField('user_id', StringType(), True),
+    StructField('timestamp', StringType(), True),
+    StructField('properties', StructType([               # ← objeto anidado
+        StructField('amount', StringType(), True),
+        StructField('payment_method', StringType(), True),
+        StructField('phone', StringType(), True),
+        StructField('origin', StringType(), True),
+        StructField('destination', StringType(), True),
+        StructField('date', StringType(), True)
+]), True)
+])
+
+json_events = spark.read.\
+  option("multiline", "true").\
+  schema(schema_events)\
+    .json("/Volumes/testdatabricks/default/datatest/events_december_2025.json")
+
+df_flat = json_events.select(
+    "event",
+    "user_id",
+    "timestamp",
+    "properties.*"
+)
+
+## display(df_flat)
+
+spark_df = df_flat
+
+
+# 3. Guardar como tabla
+spark_df.write.format("delta").mode("append").saveAsTable("events_december_2025")

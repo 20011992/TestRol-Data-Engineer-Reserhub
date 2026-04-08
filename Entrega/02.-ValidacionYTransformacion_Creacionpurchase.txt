@@ -1,0 +1,20 @@
+%sql
+CREATE TABLE purchase
+USING DELTA
+AS 
+
+
+SELECT
+lower(tb.event) as event
+,tb.user_id
+,date_format(tb.timestamp, 'yyyy-MM-dd HH:mm:ss') as timestamp
+,CASE WHEN tb.event = 'purchase_failed' THEN 0 ELSE tb.amount END as amount
+,CASE WHEN tb.event = 'purchase_failed' THEN '' ELSE lower(tb.payment_method) END as payment_method
+,CASE WHEN tb.event = 'purchase_failed' THEN '' ELSE tb.phone END as phone
+FROM testdatabricks.default.events_december_2025 AS tb
+WHERE 1=1
+AND user_id IS NOT NULL
+AND user_id <> ''
+AND amount IS NOT NULL
+AND payment_method IS NOT NULL
+AND phone LIKE  '+%'

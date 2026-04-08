@@ -1,0 +1,18 @@
+%sql
+CREATE TABLE search
+USING DELTA
+AS 
+SELECT
+lower(tb.event) as event
+,tb.user_id
+,date_format(tb.timestamp, 'yyyy-MM-dd HH:mm:ss') as timestamp
+,lower(tb.origin) as origin
+,lower(tb.destination) as destination
+,tb.date
+FROM testdatabricks.default.events_december_2025 AS tb
+WHERE 1=1
+AND user_id IS NOT NULL
+AND user_id <> ''
+AND origin IS NOT NULL
+AND destination IS NOT NULL
+AND date IS NOT NULL
