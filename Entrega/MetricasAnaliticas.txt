@@ -1,0 +1,23 @@
+%sql
+
+INSERT OVERWRITE DIRECTORY '/Volumes/testdatabricks/default/datatest/event_daily_stats'
+USING json
+OPTIONS (maptypesjson 'true')
+
+WITH users AS
+(
+    SELECT DISTINCT user_id,date_format(timestamp, 'yyyy-MM-dd') AS Date FROM purchase_complete WHERE event='purchase_complete'
+    UNION
+    SELECT DISTINCT user_id,REPLACE(Date,'/','-') AS Date FROM search
+)
+
+
+
+SELECT
+u.Date
+,u.user_id
+,(SELECT COUNT(*) FROM search WHERE user_id=u.user_id AND REPLACE(Date,'/','-')=u.Date) AS searches
+,(SELECT COUNT(*) FROM purchase_complete WHERE user_id=u.user_id AND event='purchase_complete' AND date_format(timestamp, 'yyyy-MM-dd')=Date) AS purchases
+,IFNULL((SELECT SUM(amount) FROM purchase_complete WHERE user_id=u.user_id AND event='purchase_complete' AND date_format(timestamp, 'yyyy-MM-dd')=Date),0) AS total_purchased_amount
+FROM users AS u
+ORDER BY u.Date ASC
