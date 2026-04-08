@@ -25,6 +25,7 @@ Ejecutar la solucion mediante fastapi de manera local
 DEPENDENCIAS
 1. PyCharm 2026.1
 2. Archivo json event_daily_stats.json
+3. Azure Databricks
 
 DESICIONES TECNICAS
 1. Ninguna desicion importante, solo que lo trabaje en azure databricks, todo el codigo lo subire en este repositorio
